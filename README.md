@@ -18,3 +18,14 @@ java -server -Xms1024M -Xmx1024M  -XX:PermSize=256M  -jar ./target/sc-generator.
 ```
 
 [demo](https://github.com/wu191287278/picture)
+
+
+![image](https://github.com/wu191287278/picture/blob/master/sc-generator/1.png)
+![image](https://github.com/wu191287278/picture/blob/master/sc-generator/2.png)
+![image](https://github.com/wu191287278/picture/blob/master/sc-generator/3.png)
+![image](https://github.com/wu191287278/picture/blob/master/sc-generator/4.png)
+![image](https://github.com/wu191287278/picture/blob/master/sc-generator/5.png)
+![image](https://github.com/wu191287278/picture/blob/master/sc-generator/6.png)
+![image](https://github.com/wu191287278/picture/blob/master/sc-generator/7.png)
+![image](https://github.com/wu191287278/picture/blob/master/sc-generator/8.png)
+![image](https://github.com/wu191287278/picture/blob/master/sc-generator/9.png)
