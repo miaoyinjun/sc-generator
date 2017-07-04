@@ -25,7 +25,7 @@ public class JavaGeneratorJpa extends AbstractGeneratorJpa {
                 .append("\r\n\r\n")
                 .append("import " + packagePath + ".model." + modelName+";")
                 .append("\r\n\r\n")
-                .append("interface " + modelName + "Service {")
+                .append("public interface " + modelName + "Service {")
                 .append("\r\n\r\n")
                 .append("\t" + modelName + " findOne(" + javaType + " " + javaName + ");")
                 .append("\r\n\r\n")
@@ -59,7 +59,7 @@ public class JavaGeneratorJpa extends AbstractGeneratorJpa {
                 .append("\r\n\r\n")
                 .append("\t@Autowired")
                 .append("\r\n")
-                .append("\t" + modelName + "Dao " + daoNameLow)
+                .append("\t" + modelName + "Dao " + daoNameLow + ";")
                 .append("\r\n\r\n")
                 .append("\tpublic " + modelName + " findOne(" + javaType + " " + javaName + ") {")
                 .append("\r\n\t\t")
@@ -112,7 +112,7 @@ public class JavaGeneratorJpa extends AbstractGeneratorJpa {
                 .append("\r\n\r\n")
                 .append("\t@Autowired")
                 .append("\r\n")
-                .append("\t" + modelName + "Service" + " " + serviceName)
+                .append("\t" + modelName + "Service" + " " + serviceName + ";")
                 .append("\r\n\r\n")
                 .append("\t@RequestMapping(value = \"{id}\", method = RequestMethod.GET)\r\n")
                 .append("\t" + modelName + " findOne(@PathVariable(\"id\") " + javaType + " " + javaName + ") {")
@@ -164,7 +164,7 @@ public class JavaGeneratorJpa extends AbstractGeneratorJpa {
                 .append("\r\n")
                 .append("@Table(name = \"" + tableName + "\")")
                 .append("\r\n")
-                .append("class " + modelName + " {")
+                .append("public class " + modelName + " {")
                 .append("\r\n")
                 .append("\r\n");
 
@@ -243,7 +243,7 @@ public class JavaGeneratorJpa extends AbstractGeneratorJpa {
                 .append("import org.springframework.data.repository.CrudRepository;\r\n")
                 .append("import " + packagePath + ".model." + modelName+";")
                 .append("\r\n\r\n")
-                .append("interface " + modelName + "Dao extends CrudRepository<" + modelName + ", " + javaType + ">{}");
+                .append("public interface " + modelName + "Dao extends CrudRepository<" + modelName + ", " + javaType + ">{}");
         return sb.toString();
     }
 

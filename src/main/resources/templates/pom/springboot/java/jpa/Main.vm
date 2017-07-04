@@ -13,6 +13,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2 //see http://localhost:8080/swagger-ui.html
 public class ${application} {
     public static void main(String[] args) {
-        SpringApplication.run(${application}.class, args)
+        SpringApplication.run(${application}.class, args);
     }
 }
